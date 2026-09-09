@@ -69,8 +69,14 @@ function OutreachPage() {
             </a>
           </p>
           <p>
-            <strong className="text-cream">Deployed demo:</strong> this
-            environment’s production URL (fill on deploy). Outreach path:{" "}
+            <strong className="text-cream">Deployed demo:</strong>{" "}
+            <a
+              className="underline"
+              href="https://le-construction-group-demo.vercel.app/"
+            >
+              https://le-construction-group-demo.vercel.app/
+            </a>
+            . Outreach path:{" "}
             <code className="text-teal-bright">/outreach</code>
           </p>
         </section>
@@ -243,7 +249,7 @@ I’m with Novenworks. I was looking at lneconstructiongroup.com and the gap tha
 
 I put together a speculative redesign that uses your photography, Eric’s owner story, and the CSLB license as it actually stands. It is a concept, not a project you hired us for, and your marks and photos stay yours.
 
-If it’s useful to look at: [DEPLOYED_URL]
+If it’s useful to look at: https://le-construction-group-demo.vercel.app/
 If not, no need to reply.
 
 — Novenworks`}
