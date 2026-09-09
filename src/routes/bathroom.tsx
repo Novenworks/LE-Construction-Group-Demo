@@ -59,12 +59,15 @@ function BathroomPage() {
             </div>
           </div>
           <aside className="rounded-lg border border-line bg-surface p-6 lg:col-span-5">
-            <p className="text-sm font-medium uppercase tracking-[0.14em] text-muted">
+            <p className="text-sm font-medium uppercase tracking-widest text-muted">
               We can also help with
             </p>
             <ul className="mt-4 space-y-2 text-sm">
               {bathroomCapabilities.map((item) => (
-                <li key={item} className="border-b border-line py-2 last:border-0">
+                <li
+                  key={item}
+                  className="border-b border-line py-2 last:border-0"
+                >
                   {item}
                 </li>
               ))}
@@ -86,9 +89,17 @@ function BathroomPage() {
             />
           ))}
         </div>
-        <Button asChild className="mt-8">
-          <Link to="/contact">Talk through a bathroom · {site.phone}</Link>
-        </Button>
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <Button asChild>
+            <Link to="/contact">Talk through a bathroom</Link>
+          </Button>
+          <a
+            href={site.phoneTel}
+            className="text-sm font-medium text-teal-deep"
+          >
+            {site.phone}
+          </a>
+        </div>
       </Section>
     </SiteShell>
   );

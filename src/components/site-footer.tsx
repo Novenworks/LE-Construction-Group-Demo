@@ -6,21 +6,23 @@ export function SiteFooter() {
     <footer className="bg-night text-cream">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-12">
         <div className="md:col-span-5">
-          <img
-            src="/images/logo.png"
-            alt=""
-            className="h-12 w-auto"
-            width={896}
-            height={264}
-          />
-          <p className="mt-5 max-w-sm text-[0.95rem] leading-relaxed text-cream/70">
+          <div className="inline-flex rounded-md bg-cream px-3 py-2">
+            <img
+              src="/images/logo.png"
+              alt={site.name}
+              className="h-10 w-auto sm:h-11"
+              width={896}
+              height={264}
+            />
+          </div>
+          <p className="mt-5 max-w-sm leading-relaxed text-cream/70">
             Family-owned remodeling in Santa Ana and Orange County, led by Eric
             Bernal. Kitchens, bathrooms, additions, flooring, and finishes—with
             the relationship and the finished work held to the same standard.
           </p>
         </div>
         <div className="md:col-span-3">
-          <p className="text-xs font-medium uppercase tracking-[0.16em] text-cream/50">
+          <p className="text-xs font-medium uppercase tracking-widest text-cream/50">
             Visit
           </p>
           <ul className="mt-4 space-y-2 text-sm text-cream/80">
@@ -44,7 +46,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="md:col-span-4">
-          <p className="text-xs font-medium uppercase tracking-[0.16em] text-cream/50">
+          <p className="text-xs font-medium uppercase tracking-widest text-cream/50">
             Contact
           </p>
           <ul className="mt-4 space-y-2 text-sm text-cream/80">
@@ -66,6 +68,25 @@ export function SiteFooter() {
             <li>{site.hours}</li>
             <li>
               CSLB #{site.license.number} · {site.license.classification}
+            </li>
+            <li>
+              <a
+                href={site.instagram}
+                className="hover:text-cream"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Instagram
+              </a>
+              {" · "}
+              <a
+                href={site.yelp}
+                className="hover:text-cream"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Yelp
+              </a>
             </li>
           </ul>
         </div>

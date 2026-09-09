@@ -51,7 +51,7 @@ function Hero() {
         <Eyebrow className="text-teal-bright">
           Santa Ana · Orange County
         </Eyebrow>
-        <h1 className="mt-4 max-w-3xl font-display text-[2.35rem] leading-[1.05] text-cream sm:text-5xl lg:text-[3.65rem]">
+        <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight text-cream sm:text-5xl lg:text-6xl">
           A contractor who cares about the work—and the experience
         </h1>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
@@ -91,7 +91,7 @@ function TrustStrip() {
       <div className="mx-auto grid max-w-6xl gap-6 px-4 py-6 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
         {items.map((item) => (
           <div key={item.k}>
-            <p className="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-muted">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted">
               {item.k}
             </p>
             <p className="mt-1 text-sm font-medium text-ink">{item.v}</p>
@@ -128,7 +128,7 @@ function Services() {
       <Eyebrow>What we take on</Eyebrow>
       <div className="mt-3 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <h2 className="max-w-xl text-3xl sm:text-4xl">
-          Grouped around the decisions homeowners actually make
+          Kitchens, bathrooms, and the larger jobs that start as a conversation
         </h2>
         <Link
           to="/services"
@@ -169,36 +169,34 @@ function Services() {
 
 function Work() {
   const shots = [
-    photos.kitchenIslandClose,
-    photos.bathVanityGold,
-    photos.heroIsland,
-    photos.bathHexShower,
-    photos.kitchenShaker,
-    photos.bathGlassShower,
+    { photo: photos.kitchenIslandClose, span: false },
+    { photo: photos.bathVanityGold, span: false },
+    { photo: photos.heroIsland, span: true },
+    { photo: photos.bathHexShower, span: false },
+    { photo: photos.kitchenShaker, span: false },
+    { photo: photos.bathGlassShower, span: false },
   ];
   return (
     <Section tone="warm" id="work">
       <Eyebrow>Finished work</Eyebrow>
       <h2 className="mt-3 max-w-2xl text-3xl sm:text-4xl">
-        Real kitchens and bathrooms from the L & E gallery—not catalog filler
+        Kitchens and bathrooms from L & E projects
       </h2>
       <p className="mt-4 max-w-2xl text-ink-soft">
-        These photographs come from the company’s own project gallery. They are
-        the work, not a mood board.
+        These rooms are the work. Walk through more of them—including jobs still
+        in progress—in the gallery.
       </p>
       <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
-        {shots.map((shot, i) => (
+        {shots.map((shot) => (
           <figure
-            key={shot.src}
-            className={
-              i === 2 || i === 3 ? "col-span-2 md:col-span-1" : undefined
-            }
+            key={shot.photo.src}
+            className={shot.span ? "col-span-2 md:col-span-1" : undefined}
           >
             <img
-              src={shot.src}
-              alt={shot.alt}
-              width={shot.w}
-              height={shot.h}
+              src={shot.photo.src}
+              alt={shot.photo.alt}
+              width={shot.photo.w}
+              height={shot.photo.h}
               loading="lazy"
               className="aspect-4/5 w-full rounded-md object-cover"
             />
@@ -264,7 +262,7 @@ function Process() {
     {
       n: "01",
       title: "Talk it through",
-      body: "Call or write. Eric wants to understand the house, the budget worry, and what “done” should feel like—not a generic lead form.",
+      body: "Call or write. Eric wants to understand the house, the budget worry, and what “done” should feel like.",
     },
     {
       n: "02",
@@ -286,7 +284,7 @@ function Process() {
     <Section tone="night">
       <Eyebrow className="text-teal-bright">A simple process</Eyebrow>
       <h2 className="mt-3 max-w-xl text-3xl text-cream sm:text-4xl">
-        No mystery. No manufactured timeline.
+        Talk, plan, build, finish
       </h2>
       <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map((step) => (
@@ -316,7 +314,7 @@ function MoreCapabilities() {
     <Section tone="surface">
       <Eyebrow>Also on the truck</Eyebrow>
       <h2 className="mt-3 max-w-xl text-3xl sm:text-4xl">
-        Finishes and whole-home work, not a menu of every trade
+        Flooring, paint, and the rest of the house
       </h2>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
@@ -335,7 +333,7 @@ function MoreCapabilities() {
 function Quotes() {
   return (
     <Section>
-      <Eyebrow>From the current site</Eyebrow>
+      <Eyebrow>What clients have written</Eyebrow>
       <h2 className="mt-3 max-w-xl text-3xl sm:text-4xl">
         Three clients, in their own words
       </h2>
@@ -345,7 +343,7 @@ function Quotes() {
             key={t.name}
             className="flex h-full flex-col rounded-lg border border-line bg-surface p-6"
           >
-            <p className="flex-1 text-[0.98rem] leading-relaxed text-ink-soft">
+            <p className="flex-1 leading-relaxed text-ink-soft">
               “{t.quote}”
             </p>
             <footer className="mt-6 border-t border-line pt-4">
@@ -371,18 +369,16 @@ function Local() {
             Santa Ana home base, Orange County work
           </h2>
           <p className="mt-5 text-ink-soft">
-            The company lists Orange County as home. The shop address on the
-            current site and with the Contractors State License Board is{" "}
-            {site.address.street}, {site.address.city}.
+            L & E is based at {site.address.street}, {site.address.city}—the
+            address on file with the Contractors State License Board.
           </p>
           <p className="mt-4 text-ink-soft">
-            First-party testimonials on the existing site come from Santa Ana,
-            Long Beach, and Los Angeles—useful as evidence of who has hired
-            Eric, not as a manufactured service-area map.
+            Clients who have written in have been in Santa Ana, Long Beach, and
+            Los Angeles.
           </p>
         </div>
         <div className="rounded-lg border border-line bg-surface p-6 sm:p-8">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-muted">
+          <p className="text-sm font-medium uppercase tracking-widest text-muted">
             License
           </p>
           <p className="mt-2 font-display text-3xl">
@@ -415,7 +411,7 @@ function FinalCta() {
             Tell Eric what you want the house to feel like
           </h2>
           <p className="mt-4 text-ink-soft">
-            The fastest path is still a phone call. Hours on the current site:{" "}
+            The fastest path is still a phone call. Hours listed by the company:{" "}
             {site.hours}.
           </p>
           <a

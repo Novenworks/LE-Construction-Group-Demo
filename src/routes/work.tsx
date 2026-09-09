@@ -18,11 +18,11 @@ function WorkPage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <Eyebrow>Gallery</Eyebrow>
           <h1 className="mt-3 max-w-3xl text-4xl sm:text-5xl">
-            Project photographs from the company’s own site
+            Kitchens, bathrooms, and a job in progress
           </h1>
           <p className="mt-5 max-w-2xl text-ink-soft">
-            Kitchens, bathrooms, and an active jobsite. In-progress frames are
-            labeled as such. Nothing here is stock.
+            Photographs from L & E projects. Frames taken during construction
+            are labeled in progress.
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ function WorkPage() {
                 loading="lazy"
                 className="w-full rounded-md object-cover"
               />
-              <figcaption className="mt-2 text-xs uppercase tracking-[0.14em] text-muted">
+              <figcaption className="mt-2 text-xs uppercase tracking-widest text-muted">
                 {photo.category}
                 {photo.stage === "in-progress" ? " · in progress" : ""}
               </figcaption>

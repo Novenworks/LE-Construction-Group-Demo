@@ -73,7 +73,7 @@ export const principles = [
   {
     n: "02",
     title: "Maintain a clean work site",
-    body: "Clients notice it. One bathroom remodel review on the current site called out that the site was always clean at the end of the day—and that the unexpected hurdles still got handled.",
+    body: "Clients notice it. One bathroom remodel review called out that the site was always clean at the end of the day—and that the unexpected hurdles still got handled.",
   },
   {
     n: "03",

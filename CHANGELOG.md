@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-08 — voice pass and footer contrast
+
+- Prospect-facing copy no longer describes “the current site,” “catalog filler,” or research method. Homepage, about, work, and services now speak as the business.
+- Footer wordmark sits on a cream plate so the first-party logo remains readable on the night footer (it is dark-on-transparent).
+- Instagram and Yelp links (first-party) added to footer and contact.
+- CSLB rechecked: #1070952 still current and active; WC exemption unchanged; bond with Merchants Bonding Company (Mutual) effective 07/26/2025. Still do not advertise crew size or “fully insured.”
+- Venetian plaster and structural work confirmed on `/construction-services` “Our Expertise.” Kept.
+- Recapture of BEFORE (live Wix), AFTER desktop/mobile, and scrolling GIF/MP4 after the visual pass.
+
 ## 2026-09-08 — speculative demo, first build
 
 - Prospect: L & E Construction Group, Santa Ana / Orange County.

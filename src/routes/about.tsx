@@ -49,10 +49,9 @@ function AboutPage() {
               job is done.
             </p>
             <p className="mt-4 text-ink-soft">
-              The current site’s about copy is short. The testimonials around it
-              are specific: a difficult bathroom, an in-law addition over a
-              garage, a total condo remodel. That is the business. This page
-              just says it clearly.
+              That standard shows up in the work people ask him to do: a
+              difficult bathroom, an in-law addition over a garage, a total
+              condo remodel.
             </p>
           </div>
         </div>

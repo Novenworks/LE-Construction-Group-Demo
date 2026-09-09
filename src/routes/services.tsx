@@ -79,7 +79,7 @@ function ServicesPage() {
       </Section>
 
       <Section tone="warm">
-        <Eyebrow>Expertise listed on the current site</Eyebrow>
+        <Eyebrow>Expertise</Eyebrow>
         <h2 className="mt-3 max-w-2xl text-3xl sm:text-4xl">
           Beyond the two rooms everyone starts with
         </h2>

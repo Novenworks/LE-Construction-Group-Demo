@@ -20,7 +20,6 @@ async function fullPage(url, width, height, path, waitExtra = 1500) {
   });
   await page.goto(url, { waitUntil: "networkidle", timeout: 90000 });
   await page.waitForTimeout(waitExtra);
-  // force lazy images
   await page.evaluate(async () => {
     const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     const h = document.body.scrollHeight;
@@ -71,7 +70,6 @@ const afterM = await fullPage(
 );
 console.log("after mobile", afterM);
 
-// QA below-fold desktop
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
 await page.goto(AFTER, { waitUntil: "networkidle" });
 await page.waitForTimeout(800);
@@ -98,21 +96,20 @@ for (const path of ["/work", "/services", "/about", "/contact", "/outreach"]) {
   });
 }
 
-// Scroll frames for gif/mp4
 console.log("scroll frames…");
 await page.setViewportSize({ width: 1440, height: 900 });
 await page.goto(AFTER, { waitUntil: "networkidle" });
 await page.waitForTimeout(1000);
 const total = await page.evaluate(() => document.body.scrollHeight);
 const view = 900;
-const steps = 18;
+const steps = 32;
 const framesDir = "/tmp/lne-scroll-frames";
 mkdirSync(framesDir, { recursive: true });
 const maxY = Math.max(0, total - view);
 for (let i = 0; i <= steps; i++) {
   const y = Math.round((maxY * i) / steps);
   await page.evaluate((yy) => window.scrollTo(0, yy), y);
-  await page.waitForTimeout(180);
+  await page.waitForTimeout(160);
   const name = `${framesDir}/frame-${String(i).padStart(3, "0")}.png`;
   await page.screenshot({ path: name, type: "png" });
 }

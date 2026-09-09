@@ -19,9 +19,7 @@ function ContactPage() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <Eyebrow>Contact</Eyebrow>
-            <h1 className="mt-3 text-4xl sm:text-5xl">
-              Request an estimate
-            </h1>
+            <h1 className="mt-3 text-4xl sm:text-5xl">Request an estimate</h1>
             <p className="mt-5 text-ink-soft">
               Call, email, or use the form. The form on this concept site is a
               demonstration only—it does not send mail to L & E. The phone
@@ -41,7 +39,10 @@ function ContactPage() {
                 <Mail className="mt-1 size-5 text-teal" />
                 <div>
                   <p className="text-sm text-muted">Email</p>
-                  <a href={`mailto:${site.email}`} className="text-lg font-medium">
+                  <a
+                    href={`mailto:${site.email}`}
+                    className="text-lg font-medium"
+                  >
                     {site.email}
                   </a>
                 </div>
@@ -53,12 +54,32 @@ function ContactPage() {
                   <p className="text-lg font-medium">
                     {site.address.street}
                     <br />
-                    {site.address.city}, {site.address.region} {site.address.postal}
+                    {site.address.city}, {site.address.region}{" "}
+                    {site.address.postal}
                   </p>
                   <p className="mt-1 text-sm text-muted">{site.hours}</p>
                 </div>
               </li>
             </ul>
+            <p className="mt-8 text-sm text-ink-soft">
+              <a
+                href={site.instagram}
+                className="font-medium text-teal-deep hover:text-ink"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Instagram
+              </a>
+              {" · "}
+              <a
+                href={site.yelp}
+                className="font-medium text-teal-deep hover:text-ink"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Yelp
+              </a>
+            </p>
           </div>
           <EstimateForm />
         </div>

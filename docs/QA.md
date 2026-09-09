@@ -2,7 +2,7 @@
 
 Targets: desktop ~1440px, mobile ~390px, plus intermediate widths.
 
-Checked 8 Sep 2026 against `http://127.0.0.1:8080` (dev) and production build on `:8081`.
+Checked 8 Sep 2026 against `http://127.0.0.1:8080` (dev) and production build on `:8081` after the voice/footer pass.
 
 | Check | Desktop 1440 | Mobile 390 |
 | --- | --- | --- |
@@ -11,12 +11,21 @@ Checked 8 Sep 2026 against `http://127.0.0.1:8080` (dev) and production build on
 | CTA visibility | Pass | Pass |
 | Cards / gallery | Pass | Pass; no horizontal overflow |
 | Image loads | Pass — first-party photos | Pass |
+| Footer logo contrast | Pass — wordmark on cream plate | Pass |
 | Form disclosure | Pass — demo-only copy | Pass |
 | Phone `tel:` | Pass — (562) 674-7723 | Pass |
 | Footer disclosure | Pass — speculative | Pass |
 | `/outreach` noindex, unlinked | Pass | Pass |
-| Console | Clean | Clean |
+| Console | Clean in production smoke (Playwright caret-color hydration on inputs in one dev pass is a tooling artifact) | Clean |
 | `npm run build` / `typecheck` | Pass | — |
 | Production smoke vs preview | No divergence | No divergence |
 
-Captures in `public/outreach/`: before 1440×3938 (live Wix), after desktop 1440×7144, after mobile 390×11798, GIF 720×450 / 40 frames / ~6.7s, MP4 1280×800 / 6.67s. Both scroll recordings pass the hero and show services, work, about, and later sections.
+Captures in `public/outreach/` (re-taken after the voice/footer pass):
+
+- `before-original-desktop.png` — live Wix, 1440×3938
+- `after-desktop.png` — 1440×7160
+- `after-mobile.png` — 390×11472
+- `after-scroll.gif` — 720×450, 33 frames, ~5.5s, hero through footer
+- `after-scroll.mp4` — 1280×800, 33 frames, ~3.9s, same scroll
+
+Both scroll recordings pass the hero and show services, work, about, process, quotes, and footer.
