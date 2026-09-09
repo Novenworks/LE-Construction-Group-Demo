@@ -1,0 +1,98 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteShell } from "@/components/site-shell";
+import { Button } from "@/components/ui/button";
+import { Eyebrow, Section } from "@/components/section";
+import { kitchenCapabilities, site } from "@/lib/site";
+import { kitchenGallery, photos } from "@/lib/projects";
+
+export const Route = createFileRoute("/kitchen")({
+  head: () => ({
+    meta: [{ title: "Kitchen Remodeling | L & E Construction Group" }],
+  }),
+  component: KitchenPage,
+});
+
+function KitchenPage() {
+  return (
+    <SiteShell>
+      <section className="relative isolate min-h-[52vh] overflow-hidden bg-night">
+        <img
+          src={photos.kitchenWhiteGold.src}
+          alt={photos.kitchenWhiteGold.alt}
+          className="absolute inset-0 size-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-night/55" />
+        <div className="relative mx-auto flex min-h-[52vh] max-w-6xl items-end px-4 py-16 sm:px-6">
+          <div>
+            <Eyebrow className="text-teal-bright">Kitchens</Eyebrow>
+            <h1 className="mt-3 max-w-3xl text-4xl text-cream sm:text-5xl">
+              Give “a home cooked meal” a new meaning
+            </h1>
+          </div>
+        </div>
+      </section>
+      <Section>
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-7">
+            <p className="text-lg text-ink-soft">
+              Whether it’s your very first—or the next, best version—embarking
+              on a kitchen renovation can seem overwhelming. Our advice: don’t
+              just get what you pay for. We will help you reimagine your dream
+              kitchen from the layout, to the countertops, all the way down to
+              the placement of the outlets that will power you with a coffee or
+              shake first thing in the morning.
+            </p>
+            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+              <div>
+                <h2 className="text-2xl">From idea…</h2>
+                <p className="mt-3 text-sm text-ink-soft">
+                  If you need help coming up with ideas, inspiration, or just
+                  someone to consult with, L&E can help through all the
+                  considerations when remodeling your kitchen.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl">To completion</h2>
+                <p className="mt-3 text-sm text-ink-soft">
+                  Once your vision is decided upon, L&E will take the care
+                  necessary to get the job done right—with an emphasis on
+                  customer experience, and sticking to the company’s principles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <aside className="rounded-lg border border-line bg-surface p-6 lg:col-span-5">
+            <p className="text-sm font-medium uppercase tracking-[0.14em] text-muted">
+              We can also help with
+            </p>
+            <ul className="mt-4 space-y-2 text-sm">
+              {kitchenCapabilities.map((item) => (
+                <li key={item} className="border-b border-line py-2 last:border-0">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
+      </Section>
+      <Section tone="warm">
+        <Eyebrow>Kitchen work</Eyebrow>
+        <h2 className="mt-3 text-3xl">From the gallery</h2>
+        <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3">
+          {kitchenGallery.map((photo) => (
+            <img
+              key={photo.src}
+              src={photo.src}
+              alt={photo.alt}
+              loading="lazy"
+              className="aspect-4/5 w-full rounded-md object-cover"
+            />
+          ))}
+        </div>
+        <Button asChild className="mt-8">
+          <Link to="/contact">Talk through a kitchen · {site.phone}</Link>
+        </Button>
+      </Section>
+    </SiteShell>
+  );
+}

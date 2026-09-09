@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+
+  --color-bg: #f3eee4;
+  --color-bg-warm: #ebe4d6;
+  --color-surface: #faf7f0;
+  --color-ink: #1a1714;
+  --color-ink-soft: #3a342c;
+  --color-muted: #6d655b;
+  --color-line: #d9d0c2;
+  --color-line-strong: #c4b9a8;
+  --color-teal: #2f8b88;
+  --color-teal-deep: #246f6d;
+  --color-teal-bright: #1cb8b2;
+  --color-on-teal: #f3eee4;
+  --color-night: #141210;
+  --color-night-soft: #221e1a;
+  --color-cream: #f7f3ea;
+  --color-danger: #9b3b2e;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+
+  --shadow-soft: 0 18px 40px -28px rgb(26 23 20 / 0.45);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 520;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    text-wrap: balance;
+    color: var(--color-ink);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-teal) 28%, white);
+    color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
