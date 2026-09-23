@@ -234,10 +234,10 @@ function OutreachPage() {
         <section className="mt-12">
           <h2 className="font-display text-2xl">Subject lines</h2>
           <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm text-cream/80">
-<li>Eric, I made something for L & E Construction Group</li>
-<li>Had an idea for L & E Construction Group</li>
-<li>Eric, I tried something with the L & E Construction Group site</li>
-</ol>
+          <li>Eric, I made something for L & E Construction Group</li>
+          <li>Had an idea for L & E Construction Group</li>
+          <li>Tried something with the L & E Construction Group site</li>
+        </ol>
         </section>
 
         <section className="mt-12">
@@ -245,13 +245,13 @@ function OutreachPage() {
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
             {`Hi Eric,
 
-I found L & E Construction Group and got curious enough to spend some time on the site.
+I came across L & E Construction Group and ended up spending some time on the site.
 
-There is already a lot there to work with, especially the real project work and the finished results. I ended up building a homepage concept around that.
+You already have real work to show. I had an idea for giving the projects and proof more room, so I built a version.
 
 https://le-construction-group-demo.vercel.app
 
-Not trying to turn this into a big pitch. I just thought it was worth making and showing you.
+Thought you might be curious to see it. If the direction clicks, I can show you what I changed.
 
 Vincent
 Novenworks`}
@@ -263,11 +263,11 @@ Novenworks`}
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
             {`Hi Eric,
 
-Circling back once on this. I made that homepage concept for L & E Construction Group and figured it was worth one more send.
+Just bumping this once in case it got buried. I put together that L & E Construction Group homepage idea and wanted to make sure you saw it.
 
 https://le-construction-group-demo.vercel.app
 
-If it is not on your radar right now, all good.
+No pressure if the timing is bad. Figured it was worth sending.
 
 Vincent`}
           </pre>
