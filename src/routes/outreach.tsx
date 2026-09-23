@@ -234,32 +234,42 @@ function OutreachPage() {
         <section className="mt-12">
           <h2 className="font-display text-2xl">Subject lines</h2>
           <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm text-cream/80">
-            <li>Eric — a concept site using your actual kitchen and bath photos</li>
-            <li>The gallery on lneconstructiongroup.com is stronger than the homepage</li>
-            <li>Speculative redesign for L & E — no pitch that you asked for this</li>
-          </ol>
+<li>Eric, I made something for L & E Construction Group</li>
+<li>Had an idea for L & E Construction Group</li>
+<li>Eric, I tried something with the L & E Construction Group site</li>
+</ol>
         </section>
 
         <section className="mt-12">
           <h2 className="font-display text-2xl">Cold email</h2>
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
-            {`Hi Eric —
+            {`Hi Eric,
 
-I’m with Novenworks. I was looking at lneconstructiongroup.com and the gap that stood out isn’t that you lack work to show. You have a real gallery (kitchens, marble showers, an active jobsite) and three specific testimonials — Cari’s in-law addition, Ben’s tough bathroom, Helena’s Santa Ana condo. The homepage itself still reads like a short about page, and it leans on generic photos instead of the rooms you’ve actually finished.
+I found L & E Construction Group and got curious enough to spend some time on the site.
 
-I put together a speculative redesign that uses your photography, Eric’s owner story, and the CSLB license as it actually stands. It is a concept, not a project you hired us for, and your marks and photos stay yours.
+There is already a lot there to work with, especially the real project work and the finished results. I ended up building a homepage concept around that.
 
-If it’s useful to look at: https://le-construction-group-demo.vercel.app/
-If not, no need to reply.
+https://le-construction-group-demo.vercel.app
 
-— Novenworks`}
+Not trying to turn this into a big pitch. I just thought it was worth making and showing you.
+
+Vincent
+Novenworks`}
           </pre>
         </section>
 
         <section className="mt-12">
           <h2 className="font-display text-2xl">Follow-up</h2>
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
-            {`Eric — short follow-up on the concept site I sent. The only point I wanted to make is that your existing gallery already does the hard part. Happy to take it down or leave it up as a reference. Either way, hope the work’s going well.`}
+            {`Hi Eric,
+
+Circling back once on this. I made that homepage concept for L & E Construction Group and figured it was worth one more send.
+
+https://le-construction-group-demo.vercel.app
+
+If it is not on your radar right now, all good.
+
+Vincent`}
           </pre>
         </section>
 
