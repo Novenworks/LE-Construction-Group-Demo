@@ -245,13 +245,17 @@ function OutreachPage() {
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
             {`Hi Eric,
 
-I came across L & E Construction Group and ended up spending some time on the site.
+I came across L & E Construction Group and ended up spending some time looking through the site.
 
-You already have real work to show. I had an idea for giving the projects and proof more room, so I built a version.
+The real work is already the strongest part of the story.
+
+I had an idea for how I'd present it, so I built a version instead of sending you a bunch of suggestions.
 
 https://le-construction-group-demo.vercel.app
 
-Thought you might be curious to see it. If the direction clicks, I can show you what I changed.
+Thought you might be curious to see it.
+
+If you like the direction, I can show you what I changed.
 
 Vincent
 Novenworks`}
@@ -263,11 +267,11 @@ Novenworks`}
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
             {`Hi Eric,
 
-Just bumping this once in case it got buried. I put together that L & E Construction Group homepage idea and wanted to make sure you saw it.
+Just bumping this once in case it got buried. I put together that L & E Construction Group concept and wanted to make sure you saw it.
 
 https://le-construction-group-demo.vercel.app
 
-No pressure if the timing is bad. Figured it was worth sending.
+All good if it's not something you're looking at right now.
 
 Vincent`}
           </pre>
