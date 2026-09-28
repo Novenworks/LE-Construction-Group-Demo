@@ -1,5 +1,7 @@
 # Asset-to-section plan
 
+> **27 Sep 2026 correction:** the original table below mis-described several photos (see `ASSET-INVENTORY.md` → Correction). Current placements: hero `hero-kitchen-dining.jpg` (a bathroom); services cards — Kitchens `jobsite-exterior.jpg` (kitchen), Bathrooms `bath-marble-rain.jpg`, Additions & larger work `bath-vanity-gold.jpg` (living room); home "Finished work" grid swaps `bath-vanity-gold` for `kitchen-protected` (bathroom); About/home-about `jobsite-exterior.jpg` (kitchen); `/kitchen` hero `kitchen-shaker.jpg`; `/bathroom` hero `bath-shower-toilet.jpg`; `/services` kitchen card `bath-hex-shower.jpg` (kitchen). `/kitchen` gallery now shows only the 3 real kitchens.
+
 Written before final visual implementation. Strongest real assets mapped to homepage and interior routes.
 
 | Section | Asset | Why this one |

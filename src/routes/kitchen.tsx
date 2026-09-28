@@ -17,8 +17,8 @@ function KitchenPage() {
     <SiteShell>
       <section className="relative isolate min-h-[52vh] overflow-hidden bg-night">
         <img
-          src={photos.kitchenWhiteGold.src}
-          alt={photos.kitchenWhiteGold.alt}
+          src={photos.kitchenShaker.src}
+          alt={photos.kitchenShaker.alt}
           className="absolute inset-0 size-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-night/55" />

@@ -36,8 +36,8 @@ function ServicesPage() {
             className="group overflow-hidden rounded-lg bg-surface"
           >
             <img
-              src={photos.heroIsland.src}
-              alt={photos.heroIsland.alt}
+              src={photos.bathHexShower.src}
+              alt={photos.bathHexShower.alt}
               className="aspect-3/2 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               loading="lazy"
             />
