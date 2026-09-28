@@ -3,7 +3,7 @@
 ## 2026-09-27 — photo orientation and labeling fix
 
 - Seven project photos were saved sideways when the web derivatives were made (EXIF orientation dropped). Rotated upright in the pixels, same filenames, 1500×2000, JPEG q84.
-- Re-verified every photo against its first-party Wix original. The ids were right; the descriptions were not. Only 3 photos are kitchens, 1 is a living room, and the rest are finished bathrooms — there is no jobsite or in-progress frame. Corrected `alt`, `category`, `stage`, and dimensions in `src/lib/projects.ts`.
+- Re-verified every photo against its first-party Wix original. The ids were right; the descriptions were not. Only 3 photos are kitchens, 1 is a living room, 1 is a wet bar (`bath-marble-corner.jpg`, unused), and the rest are finished bathrooms — there is no jobsite or in-progress frame. Corrected `alt`, `category`, `stage`, and dimensions in `src/lib/projects.ts`.
 - Kitchens card, `/kitchen` hero, and `/services` kitchen card now use real kitchen photos; `/bathroom` hero is a bathroom (was a living room); "Additions & larger work" uses the living room. `/work` heading and copy no longer promise in-progress frames.
 - `/work` closing CTA heading was dark text on the dark panel; now cream.
 - Operator brief (`/outreach`) wording corrected to "kitchen and bathroom photography."

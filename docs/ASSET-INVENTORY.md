@@ -26,9 +26,10 @@ What the photos actually show:
 | bath-marble-rain.jpg | Powder room — sage vanity, arched brass mirror |
 | bath-vanity-gold.jpg | **Living room** — stacked-stone fireplace wall, arched window |
 | bath-hex-shower.jpg | **Kitchen** — dark galley kitchen, gas range |
-| bath-glass-shower / shower-toilet / progress-gold / progress-room / niche / vanity-boxes / marble-* | Finished bathrooms (none show construction in progress) |
+| bath-marble-corner.jpg | **Wet bar / utility sink** — gray cabinets, integrated sink, stacked-stone wall, beside an exterior door (not a bathroom; not rendered anywhere) |
+| bath-glass-shower / shower-toilet / progress-gold / progress-room / niche / vanity-boxes / marble-close / marble-detail / marble-process / marble-wide | Finished bathrooms (none show construction in progress) |
 
-Net: 3 kitchens, 1 living room, 21 finished bathrooms, 0 jobsite or in-progress frames.
+Net: 3 kitchens, 1 living room, 1 wet bar, 20 finished bathrooms, 0 jobsite or in-progress frames.
 
 ## Used in the redesign
 

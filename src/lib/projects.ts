@@ -3,7 +3,7 @@ export type ProjectPhoto = {
   alt: string;
   w: number;
   h: number;
-  category: "kitchen" | "bathroom" | "living room";
+  category: "kitchen" | "bathroom" | "living room" | "wet bar";
   stage: "finished" | "in-progress";
 };
 
@@ -206,10 +206,10 @@ export const photos = {
   },
   bathMarbleCorner: {
     src: "/images/bath-marble-corner.jpg",
-    alt: "Vanity with gray cabinets and a white counter beside a stacked-stone accent wall and window",
+    alt: "Wet bar with gray cabinets and an integrated-sink counter beneath a window in a stacked-stone wall, beside a glass exterior door",
     w: 1500,
     h: 1999,
-    category: "bathroom",
+    category: "wet bar",
     stage: "finished",
   },
 } as const satisfies Record<string, ProjectPhoto>;
