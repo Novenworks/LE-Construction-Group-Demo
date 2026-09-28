@@ -106,8 +106,8 @@ function OutreachPage() {
             </li>
             <li>
               A real project gallery exists on{" "}
-              <code>/gallery</code> (phone photos of kitchens and bathrooms,
-              including in-progress work) but it is not used as the homepage’s
+              <code>/gallery</code> (phone photos of finished kitchens and
+              bathrooms) but it is not used as the homepage’s
               visual argument. The homepage leans on Wix-template photography
               instead.
             </li>
@@ -137,7 +137,7 @@ function OutreachPage() {
           <ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-cream/80">
             <li>
               <strong className="text-cream">Visual credibility:</strong>{" "}
-              first-party kitchen/bath/jobsite photography drives the hero and
+              first-party kitchen and bathroom photography drives the hero and
               work sections. Template stock from the Wix homepage is not used
               as “their work.”
             </li>

@@ -17,8 +17,8 @@ function BathroomPage() {
     <SiteShell>
       <section className="relative isolate min-h-[52vh] overflow-hidden bg-night">
         <img
-          src={photos.bathVanityGold.src}
-          alt={photos.bathVanityGold.alt}
+          src={photos.bathShowerToilet.src}
+          alt={photos.bathShowerToilet.alt}
           className="absolute inset-0 size-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-night/55" />

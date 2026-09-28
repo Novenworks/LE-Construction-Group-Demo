@@ -29,3 +29,21 @@ Captures in `public/outreach/` (re-taken after the voice/footer pass):
 - `after-scroll.mp4` — 1280×800, 33 frames, ~3.9s, same scroll
 
 Both scroll recordings pass the hero and show services, work, about, process, quotes, and footer.
+
+## 27 Sep 2026 — photo orientation / labeling fix (Wave 1)
+
+Checked against the production build (`vite preview`, port 3102) at 1440×900, 1366×768, 390×844, 375×667.
+
+| Check | Result |
+| --- | --- |
+| All 25 project photos upright | Pass — 7 sideways derivatives rotated in the pixels |
+| Photo matches its label (card/hero/gallery/alt) | Pass — Kitchens card, `/kitchen` hero + gallery, `/services` kitchen card now show kitchens; `/bathroom` hero is a bathroom |
+| `/work` captions | Pass — kitchen / bathroom / living room; no false "in progress" labels |
+| `/work` "Have a room in mind?" heading | Pass — was dark-on-dark (pre-existing), now cream |
+| Overflow / broken images / console | Pass at all four viewports |
+| Nav, mobile menu, `tel:` CTA | Pass |
+| `/outreach` 200, noindex/nofollow, unlinked | Pass |
+| `npm run build` / `typecheck` | Pass |
+| `npm run lint` / `npm test` | Pre-existing failures unchanged from `main` (template `client.server.ts` no-empty; 8 Grok PWA/brand tests) |
+
+Captures regenerated after the fix (`before-original-desktop.png` unchanged): `after-desktop.png` 1440×7094, `after-mobile.png` 390×11446, `after-scroll.gif` 720×450 / 33 frames, `after-scroll.mp4` 1280×800 / 33 frames / ~4.1s — taken with `scripts/capture-outreach.mjs` logic against the local production preview.

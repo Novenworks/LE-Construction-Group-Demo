@@ -107,7 +107,7 @@ function Services() {
     {
       title: "Kitchens",
       href: "/kitchen",
-      img: photos.kitchenWhiteGold,
+      img: photos.jobsite,
       copy: "Layout, cabinetry, islands, counters, lighting, and the details that make a kitchen actually work in the morning.",
     },
     {
@@ -119,7 +119,7 @@ function Services() {
     {
       title: "Additions & larger work",
       href: "/services",
-      img: photos.jobsite,
+      img: photos.bathVanityGold,
       copy: "In-law additions, condo remodels, and projects that run from modest remodels to new construction homes.",
     },
   ];
@@ -170,7 +170,7 @@ function Services() {
 function Work() {
   const shots = [
     { photo: photos.kitchenIslandClose, span: false },
-    { photo: photos.bathVanityGold, span: false },
+    { photo: photos.kitchenProtected, span: false },
     { photo: photos.heroIsland, span: true },
     { photo: photos.bathHexShower, span: false },
     { photo: photos.kitchenShaker, span: false },
@@ -183,8 +183,7 @@ function Work() {
         Kitchens and bathrooms from L & E projects
       </h2>
       <p className="mt-4 max-w-2xl text-ink-soft">
-        These rooms are the work. Walk through more of them—including jobs still
-        in progress—in the gallery.
+        These rooms are the work. Walk through more of them in the gallery.
       </p>
       <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
         {shots.map((shot) => (

@@ -18,11 +18,10 @@ function WorkPage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <Eyebrow>Gallery</Eyebrow>
           <h1 className="mt-3 max-w-3xl text-4xl sm:text-5xl">
-            Kitchens, bathrooms, and a job in progress
+            Finished kitchens, bathrooms, and living spaces
           </h1>
           <p className="mt-5 max-w-2xl text-ink-soft">
-            Photographs from L & E projects. Frames taken during construction
-            are labeled in progress.
+            Photographs from L & E projects.
           </p>
         </div>
       </section>
@@ -46,7 +45,7 @@ function WorkPage() {
           ))}
         </div>
         <div className="mt-12 rounded-lg bg-night px-6 py-10 text-cream sm:px-10">
-          <h2 className="text-3xl">Have a room in mind?</h2>
+          <h2 className="text-3xl text-cream">Have a room in mind?</h2>
           <p className="mt-3 max-w-xl text-cream/75">
             If the work you want looks like this, the next step is a
             conversation with Eric.
