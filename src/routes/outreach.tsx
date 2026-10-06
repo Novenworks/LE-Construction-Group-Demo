@@ -245,17 +245,15 @@ function OutreachPage() {
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
             {`Hi Eric,
 
-I came across L & E Construction Group and ended up spending some time looking through the site.
+I spent some time on the L & E Construction Group site and noticed the finished kitchens, bathrooms and client testimonials are the strongest part of the story, but they sit on a small portfolio and about page.
 
-The real work is already the strongest part of the story.
-
-I had an idea for how I'd present it, so I built a version instead of sending you a bunch of suggestions.
+I built a preview that groups the work by what homeowners decide on (kitchens, bathrooms, additions), puts the testimonials and your CSLB license up front, and keeps a call and estimate request on every screen on mobile.
 
 https://le-construction-group-demo.vercel.app
 
-Thought you might be curious to see it.
+The package is done for you: copy, build, mobile polish, connection to your existing estimate or phone path, technical setup and launch. I handle the work. You review and approve.
 
-If you like the direction, I can show you what I changed.
+Want me to send over the full breakdown of what you get and what it costs?
 
 Vincent
 Novenworks`}
@@ -267,13 +265,14 @@ Novenworks`}
           <pre className="mt-4 whitespace-pre-wrap rounded-md border border-cream/15 bg-night-soft p-5 text-sm leading-relaxed text-cream/85">
             {`Hi Eric,
 
-Just bumping this once in case it got buried. I put together that L & E Construction Group concept and wanted to make sure you saw it.
+Bumping this once in case it got buried. This is the L & E Construction Group preview I put together:
 
 https://le-construction-group-demo.vercel.app
 
-All good if it's not something you're looking at right now.
+Want me to send over the full breakdown of what you get and what it costs?
 
-Vincent`}
+Vincent
+Novenworks`}
           </pre>
         </section>
 
