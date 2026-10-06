@@ -247,7 +247,7 @@ function OutreachPage() {
 
 I spent some time on the L & E Construction Group site and noticed the finished kitchens, bathrooms and client testimonials are the strongest part of the story, but they sit on a small portfolio and about page.
 
-I built a preview that groups the work by what homeowners decide on (kitchens, bathrooms, additions), puts the testimonials and your CSLB license up front, and keeps a call and estimate request on every screen on mobile.
+I built a preview that groups the work by what homeowners decide on: kitchens, bathrooms and additions. It brings your project photos, client testimonials and CSLB license together, with clear paths to call or request an estimate.
 
 https://le-construction-group-demo.vercel.app
 
