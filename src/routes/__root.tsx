@@ -22,6 +22,7 @@ export const Route = createRootRoute({
           "Family-owned Orange County remodeling. Kitchens, bathrooms, additions, flooring, and finishes—led by Eric Bernal in Santa Ana.",
       },
       { name: "theme-color", content: "#2f8b88" },
+      { name: "robots", content: "noindex, nofollow" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
